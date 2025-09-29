@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-douyin-transcript",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "An n8n community node for extracting and transcribing text content from Douyin (TikTok China) videos using Alibaba Cloud's speech model service",
   "license": "MIT",
   "homepage": "https://github.com/yl2014/n8n-nodes-douyin-transcript",
