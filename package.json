@@ -1,0 +1,51 @@
+{
+  "name": "n8n-nodes-douyin-transcript",
+  "version": "0.1.0",
+  "description": "An n8n community node for extracting and transcribing text content from Douyin (TikTok China) videos using Alibaba Cloud's speech model service",
+  "license": "MIT",
+  "homepage": "https://github.com/yl2014/n8n-nodes-douyin-transcript",
+  "keywords": [
+    "n8n-community-node-package"
+  ],
+  "author": {
+    "name": "yl2014",
+    "email": "feiguan@foxmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yl2014/n8n-nodes-douyin-transcript.git"
+  },
+  "scripts": {
+    "build": "n8n-node build",
+    "build:watch": "tsc --watch",
+    "dev": "n8n-node dev",
+    "dev:custom": "n8n-node dev --custom-user-folder ~",
+    "lint": "n8n-node lint",
+    "lint:fix": "n8n-node lint --fix",
+    "release": "n8n-node release",
+    "prepublishOnly": "n8n-node prerelease"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/DouyinTranscriptApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/Douyin/DouyinTranscript.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@n8n/node-cli": "^0.9.0",
+    "@types/node": "^24.5.2",
+    "eslint": "9.32.0",
+    "prettier": "3.6.2",
+    "release-it": "^19.0.4",
+    "typescript": "5.9.2"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
